@@ -32,8 +32,9 @@
   </div>
 
   <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_area :image_url, id: :print_image_url %>
+    <label class="btn btn-primary">
+      Upload a Print Image file <%= form.file_field :image_url, style: 'display:none;' %>
+    </label> 
   </div>
 
   <div class="actions">
